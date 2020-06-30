@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mandiri Contact Apps</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="header_title">My Contacts</string>
+    <string name="label_first_name">First Name</string>
+    <string name="label_last_name">Last Name</string>
+    <string name="label_age">Age</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_add">Add</string>
+</resources>
