@@ -2,7 +2,6 @@ package com.example.mandiricontactapps.view;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,11 +40,11 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.MyViewHo
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         if(dataList != null) {
-            String name = dataList.get(position).getFirstName() + " " +
-                          dataList.get(position).getLastName();
+            String name = dataList.get(holder.getAdapterPosition()).getFirstName() + " " +
+                          dataList.get(holder.getAdapterPosition()).getLastName();
             holder.tvName.setText(name);
-            if(!dataList.get(position).getPhoto().isEmpty() && !"n/a".equalsIgnoreCase(dataList.get(position).getPhoto())) {
-                String imageUrl = dataList.get(position).getPhoto().replace("http", "https");
+            if(!dataList.get(holder.getAdapterPosition()).getPhoto().isEmpty() && !"n/a".equalsIgnoreCase(dataList.get(holder.getAdapterPosition()).getPhoto())) {
+                String imageUrl = dataList.get(holder.getAdapterPosition()).getPhoto().replace("http", "https");
                 Glide.with(context)
                         .load(imageUrl)
                         .error(R.drawable.ic_user)

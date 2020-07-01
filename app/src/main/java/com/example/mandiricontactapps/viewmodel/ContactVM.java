@@ -1,7 +1,5 @@
 package com.example.mandiricontactapps.viewmodel;
 
-import android.util.Log;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -111,7 +109,6 @@ public class ContactVM extends ViewModel {
 
     public void deleteContact(String id) {
         Call<String> deleteContactCall = api.getInstance().deleteContact(id);
-        Log.i("wedew", id);
         deleteContactCall.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {

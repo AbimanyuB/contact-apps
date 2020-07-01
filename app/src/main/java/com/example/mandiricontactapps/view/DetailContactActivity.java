@@ -3,7 +3,6 @@ package com.example.mandiricontactapps.view;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
@@ -71,6 +70,11 @@ public class DetailContactActivity extends AppCompatActivity {
     }
 
     public void initContentViews() {
+        HeaderFragment headerFragment = (HeaderFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.f_header);
+        if(headerFragment != null) {
+            headerFragment.hideRightIcon();
+        }
         if (state != null) {
             if (DETAIL_STATE.equalsIgnoreCase(state)) {
                 setDetailStateContent();
@@ -225,7 +229,7 @@ public class DetailContactActivity extends AppCompatActivity {
                 contactData.setId(dataList.getId());
             }
         } else {
-            contactData.setPhoto("n/a");
+            contactData.setPhoto("N/A");
         }
     }
 
@@ -233,7 +237,6 @@ public class DetailContactActivity extends AppCompatActivity {
         getContentData();
         if (state != null) {
             if (DETAIL_STATE.equalsIgnoreCase(state)) {
-                Log.i("wedew", "Terpencet");
                 viewModel.updateContact(contactData);
             } else {
                 viewModel.insertContact(contactData);

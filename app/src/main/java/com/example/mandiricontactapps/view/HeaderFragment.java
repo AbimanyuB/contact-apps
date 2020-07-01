@@ -51,4 +51,8 @@ public class HeaderFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
     }
+
+    public void hideRightIcon() {
+        ivHeaderRightIcon.setVisibility(View.GONE);
+    }
 }

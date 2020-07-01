@@ -7,4 +7,6 @@
     <color name="textWhite">#FFFFFF</color>
     <color name="backgroundBlue">#0BB5FF</color>
     <color name="backgroundRed">#ff1919</color>
+    <color name="colorRipple">#818181</color>
+
 </resources>
