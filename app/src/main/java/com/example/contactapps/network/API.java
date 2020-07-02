@@ -1,4 +1,4 @@
-package com.example.mandiricontactapps.network;
+package com.example.contactapps.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

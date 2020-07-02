@@ -1,4 +1,4 @@
-package com.example.mandiricontactapps.model;
+package com.example.contactapps.model;
 
 import com.google.gson.annotations.SerializedName;
 

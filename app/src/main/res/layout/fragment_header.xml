@@ -6,7 +6,7 @@
     android:background="@color/backgroundBlue"
     android:orientation="horizontal"
     android:padding="@dimen/_12sdp"
-    tools:context=".view.HeaderFragment">
+    tools:context="com.example.contactapps.view.HeaderFragment">
 
     <ImageView
         android:id="@+id/iv_headerLeftIcon"

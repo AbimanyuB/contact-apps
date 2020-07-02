@@ -1,4 +1,4 @@
-package com.example.mandiricontactapps.viewmodelfactory;
+package com.example.contactapps.viewmodelfactory;
 
 import android.content.Context;
 
@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.mandiricontactapps.viewmodel.ContactVM;
+import com.example.contactapps.viewmodel.ContactVM;
 
 public class ContactVMF implements ViewModelProvider.Factory {
     private final Context context;

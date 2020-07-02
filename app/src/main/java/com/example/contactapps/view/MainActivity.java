@@ -1,25 +1,21 @@
-package com.example.mandiricontactapps.view;
+package com.example.contactapps.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModel;
-import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.contactapps.model.ListContactData;
+import com.example.contactapps.model.ListContactResponse;
+import com.example.contactapps.viewmodel.ContactVM;
+import com.example.contactapps.viewmodelfactory.ContactVMF;
 import com.example.mandiricontactapps.R;
-import com.example.mandiricontactapps.model.ListContactData;
-import com.example.mandiricontactapps.model.ListContactResponse;
-import com.example.mandiricontactapps.viewmodel.ContactVM;
-import com.example.mandiricontactapps.viewmodelfactory.ContactVMF;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;

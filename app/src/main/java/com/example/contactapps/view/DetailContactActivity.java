@@ -1,4 +1,4 @@
-package com.example.mandiricontactapps.view;
+package com.example.contactapps.view;
 
 import android.content.Intent;
 import android.content.res.Resources;
@@ -16,12 +16,12 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.bumptech.glide.Glide;
+import com.example.contactapps.viewmodel.ContactVM;
 import com.example.mandiricontactapps.R;
-import com.example.mandiricontactapps.model.ContactData;
-import com.example.mandiricontactapps.model.ContactResponse;
-import com.example.mandiricontactapps.model.ListContactData;
-import com.example.mandiricontactapps.viewmodel.ContactVM;
-import com.example.mandiricontactapps.viewmodelfactory.ContactVMF;
+import com.example.contactapps.model.ContactData;
+import com.example.contactapps.model.ContactResponse;
+import com.example.contactapps.model.ListContactData;
+import com.example.contactapps.viewmodelfactory.ContactVMF;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

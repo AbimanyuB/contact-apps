@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.MainActivity"
+    tools:context="com.example.contactapps.view.MainActivity"
     android:orientation="vertical">
 
     <fragment
         android:id="@+id/f_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:name="com.example.mandiricontactapps.view.HeaderFragment"/>
+        android:name="com.example.contactapps.view.HeaderFragment"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_contact"

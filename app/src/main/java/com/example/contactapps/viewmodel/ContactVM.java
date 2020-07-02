@@ -1,13 +1,13 @@
-package com.example.mandiricontactapps.viewmodel;
+package com.example.contactapps.viewmodel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.mandiricontactapps.model.ContactData;
-import com.example.mandiricontactapps.model.ContactResponse;
-import com.example.mandiricontactapps.model.ListContactResponse;
-import com.example.mandiricontactapps.network.API;
+import com.example.contactapps.model.ContactData;
+import com.example.contactapps.model.ContactResponse;
+import com.example.contactapps.model.ListContactResponse;
+import com.example.contactapps.network.API;
 
 import retrofit2.Call;
 import retrofit2.Callback;

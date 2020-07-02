@@ -1,4 +1,4 @@
-package com.example.mandiricontactapps.view;
+package com.example.contactapps.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.mandiricontactapps.R;
-import com.example.mandiricontactapps.model.ListContactData;
+import com.example.contactapps.model.ListContactData;
 
 import java.util.List;
 

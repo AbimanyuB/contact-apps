@@ -1,4 +1,4 @@
-package com.example.mandiricontactapps.view;
+package com.example.contactapps.view;
 
 import android.content.Context;
 import android.os.Bundle;

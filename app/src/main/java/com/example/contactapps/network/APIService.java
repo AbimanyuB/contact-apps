@@ -1,7 +1,7 @@
-package com.example.mandiricontactapps.network;
+package com.example.contactapps.network;
 
-import com.example.mandiricontactapps.model.ContactResponse;
-import com.example.mandiricontactapps.model.ListContactResponse;
+import com.example.contactapps.model.ContactResponse;
+import com.example.contactapps.model.ListContactResponse;
 
 import retrofit2.Call;
 import retrofit2.http.DELETE;
@@ -11,7 +11,6 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
-import retrofit2.http.Query;
 
 public interface APIService {
     @GET("contact")
